@@ -1,0 +1,21 @@
+<%= form_for(@landio_item) do |f| %>
+  <% if @landio_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@landio_item.errors.count, "error") %> prohibited this landio_item from being saved:</h2>
+
+      <ul>
+      <% @landio_item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
