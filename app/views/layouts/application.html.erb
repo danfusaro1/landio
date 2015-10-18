@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Landio</title>
+  <title>Smart Landing Page</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="smart landing page">
+  <meta name="author" content="stilearning">
+  <!-- styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/smart-landing.css" rel="stylesheet">
 </head>
+
 <body>
 
-<%= yield %>
+  <%= yield %>
 
+  <!-- ================================================== -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>
